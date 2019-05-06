@@ -55,6 +55,7 @@
                 <module>common</module>
                 <module>commons</module>
                 <module>config</module>
+                <module>core</module>
                 <module>cloud-content</module>
                 <module>content</module>
                 <module>content-review</module>
