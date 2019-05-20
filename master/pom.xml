@@ -935,6 +935,12 @@
         <version>${sakai.version}</version>
         <scope>provided</scope>
       </dependency>
+      <dependency>
+        <groupId>org.sakaiproject.core</groupId>
+        <artifactId>api</artifactId>
+        <version>${sakai.version}</version>
+        <scope>provided</scope>
+      </dependency>
 
       <!-- Tika includes asm-debug-all which it really shouldn't
            since it is used in multiple places it is declared here so its done right -->

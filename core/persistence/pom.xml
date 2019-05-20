@@ -9,10 +9,24 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <deploy.target>shared</deploy.target>
+    </properties>
+
     <groupId>org.sakaiproject.core</groupId>
     <artifactId>persistence</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.sakaiproject.core</groupId>
+            <artifactId>utils</artifactId>
+            <version>20-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.sakaiproject.kernel</groupId>
+            <artifactId>sakai-kernel-private</artifactId>
+            <version>20-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -29,6 +43,14 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

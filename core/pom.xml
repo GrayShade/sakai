@@ -17,8 +17,10 @@
     <inceptionYear>2019</inceptionYear>
 
     <modules>
+        <module>api</module>
         <module>persistence</module>
         <module>services</module>
+        <module>utils</module>
     </modules>
 
     <build>

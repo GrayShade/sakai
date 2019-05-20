@@ -331,18 +331,18 @@ public class SectionAwarenessImpl implements SectionAwareness {
 	/**
 	 * @inheritDoc
 	 */
-	public List getSectionMembersInRole(final String sectionUuid, final Role role) {
+	public List<? extends ParticipationRecord> getSectionMembersInRole(String sectionUuid, Role role) {
 		if(role.isTeachingAssistant()) {
 			return getSectionTeachingAssistants(sectionUuid);
 		} else if(role.isStudent()) {
 			return getSectionEnrollments(sectionUuid);
 		} else {
 			log.error("Can't get section members in role " + role);
-			return new ArrayList();
+			return new ArrayList<>();
 		}
 	}
 
-	private List getSectionEnrollments(String sectionUuid) {
+	private List<EnrollmentRecord> getSectionEnrollments(String sectionUuid) {
 		Group group = siteService.findGroup(sectionUuid);
 		CourseSection section = getSection(sectionUuid);
 		if(section == null) {
@@ -371,7 +371,7 @@ public class SectionAwarenessImpl implements SectionAwareness {
         return membersList;
 	}
 
-	private List getSectionTeachingAssistants(String sectionUuid) {
+	private List<TeachingAssistantRecordImpl> getSectionTeachingAssistants(String sectionUuid) {
 		Group group = siteService.findGroup(sectionUuid);
 		CourseSection section = getSection(sectionUuid);
 		if(section == null) {

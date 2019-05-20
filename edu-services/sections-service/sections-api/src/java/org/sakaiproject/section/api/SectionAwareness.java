@@ -26,6 +26,7 @@ import java.util.Locale;
 
 import org.sakaiproject.section.api.coursemanagement.CourseSection;
 import org.sakaiproject.section.api.coursemanagement.EnrollmentRecord;
+import org.sakaiproject.section.api.coursemanagement.ParticipationRecord;
 import org.sakaiproject.section.api.facade.Role;
 
 /**
@@ -155,7 +156,7 @@ public interface SectionAwareness {
      * {@link org.sakaiproject.section.api.coursemanagement.CourseSection CourseSection}
      * that play a given {@link org.sakaiproject.section.api.facade.Role Role}.
      */
-    public List getSectionMembersInRole(String sectionUuid, Role role);
+    public List<? extends ParticipationRecord> getSectionMembersInRole(String sectionUuid, Role role);
 
     /**
      * Checks whether a user plays a particular {@link org.sakaiproject.section.api.facade.Role Role}
