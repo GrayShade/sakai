@@ -45,9 +45,9 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.sakaiproject.gradebookng.business.model.GbGroup;
 import org.sakaiproject.gradebookng.business.model.GbUser;
 import org.sakaiproject.gradebookng.tool.component.GbAjaxButton;
-import org.sakaiproject.service.gradebook.shared.CategoryDefinition;
-import org.sakaiproject.service.gradebook.shared.GraderPermission;
-import org.sakaiproject.service.gradebook.shared.PermissionDefinition;
+import org.sakaiproject.core.api.grades.CategoryDefinition;
+import org.sakaiproject.core.api.grades.GraderPermission;
+import org.sakaiproject.core.api.grades.PermissionDefinition;
 
 import lombok.Getter;
 import lombok.Setter;

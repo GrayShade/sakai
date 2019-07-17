@@ -10,13 +10,12 @@
 		<property name="userDirectoryService" ref="org.sakaiproject.user.api.UserDirectoryService" />
 		<property name="serverConfigService" ref="org.sakaiproject.component.api.ServerConfigurationService" />
 		<property name="toolManager" ref="org.sakaiproject.tool.api.ToolManager" />
-		<property name="gradebookService" ref="org.sakaiproject.service.gradebook.GradebookService" />
-		<property name="gradebookPermissionService" ref="org.sakaiproject.service.gradebook.GradebookPermissionService" />
-		<property name="gradebookFrameworkService" ref="org.sakaiproject.service.gradebook.GradebookFrameworkService"/>
+		<property name="gradingService" ref="org.sakaiproject.core.api.grading.GradingService" />
+		<property name="gradingPermissionService" ref="org.sakaiproject.core.api.grading.GradingPermissionService" />
 		<property name="sectionManager" ref="org.sakaiproject.section.api.SectionManager"/>
 		<property name="securityService" ref="org.sakaiproject.authz.api.SecurityService" />
 		<property name="rubricsService" ref="org.sakaiproject.rubrics.logic.RubricsService" />
-		<property name="gradebookExternalAssessmentService" ref="org.sakaiproject.service.gradebook.GradebookExternalAssessmentService"/>
+		<!--property name="gradebookExternalAssessmentService" ref="org.sakaiproject.service.gradebook.GradebookExternalAssessmentService"/-->
 	</bean>
 
 	<bean
@@ -33,8 +32,9 @@
 		class="org.sakaiproject.gradebookng.framework.GradebookNgEntityProducer"
 		init-method="init">
 		<property name="entityManager" ref="org.sakaiproject.entity.api.EntityManager" />
-		<property name="gradebookService" ref="org.sakaiproject.service.gradebook.GradebookService" />
-		<property name="gradebookFrameworkService" ref="org.sakaiproject.service.gradebook.GradebookFrameworkService" />	
+		<property name="gradingService" ref="org.sakaiproject.core.api.grading.GradingService" />
+		<!--property name="gradebookService" ref="org.sakaiproject.service.gradebook.GradebookService" />
+		<property name="gradebookFrameworkService" ref="org.sakaiproject.service.gradebook.GradebookFrameworkService" /-->
 	</bean>
 	
 	<bean

@@ -51,12 +51,12 @@ import org.sakaiproject.gradebookng.tool.model.ImportWizardModel;
 import org.sakaiproject.gradebookng.tool.pages.GradebookPage;
 import org.sakaiproject.gradebookng.tool.pages.ImportExportPage;
 import org.sakaiproject.gradebookng.tool.panels.BasePanel;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.AssignmentHasIllegalPointsException;
-import org.sakaiproject.service.gradebook.shared.ConflictingAssignmentNameException;
-import org.sakaiproject.service.gradebook.shared.ConflictingExternalIdException;
-import org.sakaiproject.service.gradebook.shared.GradeDefinition;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.AssignmentHasIllegalPointsException;
+import org.sakaiproject.core.api.grades.ConflictingAssignmentNameException;
+import org.sakaiproject.core.api.grades.ConflictingExternalIdException;
+import org.sakaiproject.core.api.grades.GradeDefinition;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
 
 /**
  * Confirmation page for what is going to be imported

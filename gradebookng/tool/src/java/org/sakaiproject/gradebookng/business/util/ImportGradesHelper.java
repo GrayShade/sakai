@@ -70,7 +70,7 @@ import org.sakaiproject.gradebookng.business.model.ProcessedGradeItemDetail;
 import org.sakaiproject.gradebookng.tool.model.AssignmentStudentGradeInfo;
 import org.sakaiproject.gradebookng.tool.model.ImportWizardModel;
 import org.sakaiproject.gradebookng.tool.pages.ImportExportPage;
-import org.sakaiproject.service.gradebook.shared.Assignment;
+import org.sakaiproject.core.api.grades.Assignment;
 
 /**
  * Helper to handling parsing and processing of an imported gradebook file

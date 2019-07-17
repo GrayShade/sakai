@@ -36,15 +36,16 @@ import org.sakaiproject.gradebookng.tool.model.GbModalWindow;
 import org.sakaiproject.gradebookng.tool.model.UiMode;
 import org.sakaiproject.gradebookng.tool.pages.GradebookPage;
 import org.sakaiproject.rubrics.logic.RubricsConstants;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.AssignmentHasIllegalPointsException;
-import org.sakaiproject.service.gradebook.shared.CategoryDefinition;
-import org.sakaiproject.service.gradebook.shared.ConflictingAssignmentNameException;
-import org.sakaiproject.service.gradebook.shared.ConflictingExternalIdException;
-import org.sakaiproject.service.gradebook.shared.GradebookHelper;
-import org.sakaiproject.service.gradebook.shared.GradebookService;
-import org.sakaiproject.service.gradebook.shared.InvalidGradeItemNameException;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.AssignmentHasIllegalPointsException;
+import org.sakaiproject.core.api.grades.CategoryDefinition;
+import org.sakaiproject.core.api.grades.ConflictingAssignmentNameException;
+import org.sakaiproject.core.api.grades.ConflictingExternalIdException;
+import org.sakaiproject.core.api.grades.GradebookHelper;
+import org.sakaiproject.core.api.grades.GradingService;
+import org.sakaiproject.core.api.grades.InvalidGradeItemNameException;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
+import org.sakaiproject.core.utils.grades.GradingConstants;
 import org.sakaiproject.util.DateFormatterUtil;
 
 /**
@@ -93,7 +94,7 @@ public class AddOrEditGradeItemPanel extends BasePanel {
 			assignment.setReleased(true);
 			// If no categories, then default counted to true
 			final Gradebook gradebook = this.businessService.getGradebook();
-			assignment.setCounted(GradebookService.CATEGORY_TYPE_NO_CATEGORY == gradebook.getCategory_type());
+			assignment.setCounted(GradingConstants.CATEGORY_TYPE_NO_CATEGORY == gradebook.getCategory_type());
 		}
 
 		// form model

@@ -39,9 +39,9 @@ import org.sakaiproject.gradebookng.business.model.GbUser;
 import org.sakaiproject.gradebookng.business.util.CourseGradeFormatter;
 import org.sakaiproject.gradebookng.tool.component.GbAjaxButton;
 import org.sakaiproject.gradebookng.tool.component.GbFeedbackPanel;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.api.grades.GradebookInformation;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
 
 /**
  * Panel for the course grade override window

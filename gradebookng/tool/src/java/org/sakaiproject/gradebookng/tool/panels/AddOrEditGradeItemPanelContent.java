@@ -40,11 +40,12 @@ import org.sakaiproject.gradebookng.business.GbCategoryType;
 import org.sakaiproject.gradebookng.business.util.FormatHelper;
 import org.sakaiproject.gradebookng.tool.model.UiMode;
 import org.sakaiproject.rubrics.logic.RubricsConstants;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.CategoryDefinition;
-import org.sakaiproject.service.gradebook.shared.GradebookService;
-import org.sakaiproject.service.gradebook.shared.GradingType;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.CategoryDefinition;
+import org.sakaiproject.core.api.grades.GradingService;
+import org.sakaiproject.core.api.grades.GradingType;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
+import org.sakaiproject.core.utils.grades.GradingConstants;
 import org.sakaiproject.util.DateFormatterUtil;
 
 import lombok.extern.slf4j.Slf4j;
@@ -224,7 +225,7 @@ public class AddOrEditGradeItemPanelContent extends BasePanel {
 					@Override
 					public Object getDisplayValue(final Long value) {
 						final CategoryDefinition category = categoryMap.get(value);
-						if (GradebookService.CATEGORY_TYPE_WEIGHTED_CATEGORY == gradebook.getCategory_type()) {
+						if (GradingConstants.CATEGORY_TYPE_WEIGHTED_CATEGORY == gradebook.getCategory_type()) {
 							final String weight = FormatHelper.formatDoubleAsPercentage(category.getWeight() * 100);
 							return MessageFormat.format(getString("label.addgradeitem.categorywithweight"),
 									category.getName(), weight);

@@ -34,12 +34,12 @@ import org.sakaiproject.gradebookng.business.model.GbGradeInfo;
 import org.sakaiproject.gradebookng.business.model.GbStudentGradeInfo;
 import org.sakaiproject.gradebookng.business.util.CourseGradeFormatter;
 import org.sakaiproject.gradebookng.tool.pages.GradebookPage;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.CategoryDefinition;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.service.gradebook.shared.GradingType;
-import org.sakaiproject.service.gradebook.shared.SortType;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.CategoryDefinition;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.api.grades.GradingType;
+import org.sakaiproject.core.api.grades.SortType;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
 
 public class InstructorGradeSummaryGradesPanel extends BasePanel {
 

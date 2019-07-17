@@ -35,9 +35,9 @@ import org.sakaiproject.gradebookng.business.util.FormatHelper;
 import org.sakaiproject.gradebookng.tool.model.GradebookUiSettings;
 import org.sakaiproject.gradebookng.tool.pages.GradebookPage;
 import org.sakaiproject.gradebookng.business.GradebookNgBusinessService;
-import org.sakaiproject.service.gradebook.shared.CategoryScoreData;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.api.grades.CategoryScoreData;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
 import org.sakaiproject.util.NumberUtil;
 
 public class GradeUpdateAction extends InjectableAction implements Serializable {

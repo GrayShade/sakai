@@ -17,7 +17,7 @@ package org.sakaiproject.gradebookng.framework;
 
 import lombok.extern.slf4j.Slf4j;
 import org.sakaiproject.entity.api.ContextObserver;
-import org.sakaiproject.service.gradebook.shared.GradebookNotFoundException;
+import org.sakaiproject.core.api.grades.GradebookNotFoundException;
 
 /**
  * Sakai context observer that responds to changes in the site (ie tools added/deleted etc) so that we can respond and ensure everything is
@@ -31,9 +31,9 @@ public class GradebookNgContextObserver extends GradebookNgEntityProducer implem
 	@Override
 	public void contextCreated(final String context, final boolean toolPlacement) {
 		// A new site has been created with this tool. Ensure we have a gradebook
-		if (toolPlacement && !this.gradebookFrameworkService.isGradebookDefined(context)) {
+		if (toolPlacement && !this.gradingService.isGradebookDefined(context)) {
 			log.debug("Gradebook NG added to site " + context + ". Bootstrapping a gradebook.");
-			this.gradebookFrameworkService.addGradebook(context, context);
+			this.gradingService.addGradebook(context, context);
 		}
 
 	}
@@ -43,8 +43,8 @@ public class GradebookNgContextObserver extends GradebookNgEntityProducer implem
 		if (toolPlacement) {
 			// Site has been edited and this tool has been added
 			log.debug("Gradebook NG added to site " + context + ". Bootstrapping a gradebook.");
-			if (!this.gradebookFrameworkService.isGradebookDefined(context)) {
-				this.gradebookFrameworkService.addGradebook(context, context);
+			if (!this.gradingService.isGradebookDefined(context)) {
+				this.gradingService.addGradebook(context, context);
 			}
 		} else {
 			// Site has been edited and this tool has been removed
@@ -56,10 +56,10 @@ public class GradebookNgContextObserver extends GradebookNgEntityProducer implem
 	@Override
 	public void contextDeleted(final String context, final boolean toolPlacement) {
 		// Site has been deleted
-		if (this.gradebookFrameworkService.isGradebookDefined(context)) {
+		if (this.gradingService.isGradebookDefined(context)) {
 			log.debug("Site " + context + " has been deleted. Removing associated gradebook data.");
 			try {
-				this.gradebookFrameworkService.deleteGradebook(context);
+				this.gradingService.deleteGradebook(context);
 			} catch (final GradebookNotFoundException e) {
 				log.debug("Couldnt find gradebook. Nothing to delete.", e);
 			}

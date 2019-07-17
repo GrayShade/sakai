@@ -51,8 +51,8 @@ import org.sakaiproject.gradebookng.tool.component.GbAjaxButton;
 import org.sakaiproject.gradebookng.tool.model.GbGradingSchemaEntry;
 import org.sakaiproject.gradebookng.tool.model.GbSettings;
 import org.sakaiproject.gradebookng.tool.stats.CourseGradeStatistics;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.service.gradebook.shared.GradeMappingDefinition;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.api.grades.GradeMappingDefinition;
 
 public class SettingsGradingSchemaPanel extends BasePanel implements IFormModelUpdateListener {
 

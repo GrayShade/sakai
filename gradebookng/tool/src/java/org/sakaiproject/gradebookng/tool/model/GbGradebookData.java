@@ -40,11 +40,11 @@ import org.sakaiproject.gradebookng.business.model.GbStudentGradeInfo;
 import org.sakaiproject.gradebookng.business.model.GbStudentNameSortOrder;
 import org.sakaiproject.gradebookng.business.util.FormatHelper;
 import org.sakaiproject.gradebookng.tool.pages.GradebookPage;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.CategoryDefinition;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
-import org.sakaiproject.service.gradebook.shared.GradingType;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.CategoryDefinition;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.api.grades.GradebookInformation;
+import org.sakaiproject.core.api.grades.GradingType;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

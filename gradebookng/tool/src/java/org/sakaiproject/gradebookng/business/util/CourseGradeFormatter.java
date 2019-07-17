@@ -23,8 +23,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.wicket.model.StringResourceModel;
 import org.sakaiproject.gradebookng.business.GbCategoryType;
 import org.sakaiproject.gradebookng.business.GbRole;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
 
 /**
  * Helper class to handle the formatting of the course grade display string

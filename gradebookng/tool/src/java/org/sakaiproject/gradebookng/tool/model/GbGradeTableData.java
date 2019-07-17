@@ -24,11 +24,11 @@ import org.sakaiproject.gradebookng.business.GradebookNgBusinessService;
 import org.sakaiproject.gradebookng.business.exception.GbAccessDeniedException;
 import org.sakaiproject.gradebookng.business.model.GbStudentGradeInfo;
 import org.sakaiproject.gradebookng.business.util.GbStopWatch;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.CategoryDefinition;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
-import org.sakaiproject.service.gradebook.shared.SortType;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.CategoryDefinition;
+import org.sakaiproject.core.api.grades.GradebookInformation;
+import org.sakaiproject.core.api.grades.SortType;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

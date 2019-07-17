@@ -22,8 +22,8 @@ import java.util.Map;
 
 import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.sakaiproject.gradebookng.business.model.GbStudentGradeInfo;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.api.grades.GradebookInformation;
 
 /**
  * Comparator class for sorting by course grade, first by the letter grade's index in the gradebook's grading scale and then by the number

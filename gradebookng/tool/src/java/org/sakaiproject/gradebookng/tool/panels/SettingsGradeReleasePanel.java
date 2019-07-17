@@ -34,7 +34,7 @@ import org.apache.wicket.model.ResourceModel;
 import org.sakaiproject.gradebookng.business.GbCategoryType;
 import org.sakaiproject.gradebookng.tool.model.GbSettings;
 import org.sakaiproject.gradebookng.tool.pages.SettingsPage;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
+import org.sakaiproject.core.api.grades.GradebookInformation;
 
 public class SettingsGradeReleasePanel extends BasePanel {
 

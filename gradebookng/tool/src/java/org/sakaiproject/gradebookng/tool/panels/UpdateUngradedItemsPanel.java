@@ -41,10 +41,10 @@ import org.sakaiproject.gradebookng.tool.component.GbAjaxButton;
 import org.sakaiproject.gradebookng.tool.component.GbFeedbackPanel;
 import org.sakaiproject.gradebookng.tool.model.GradebookUiSettings;
 import org.sakaiproject.gradebookng.tool.pages.GradebookPage;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.GraderPermission;
-import org.sakaiproject.service.gradebook.shared.GradingType;
-import org.sakaiproject.service.gradebook.shared.PermissionDefinition;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.GraderPermission;
+import org.sakaiproject.core.api.grades.GradingType;
+import org.sakaiproject.core.api.grades.PermissionDefinition;
 import org.sakaiproject.util.FormattedText;
 import org.sakaiproject.util.NumberUtil;
 

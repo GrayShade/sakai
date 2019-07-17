@@ -24,8 +24,8 @@ import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 import org.sakaiproject.gradebookng.business.GradebookNgBusinessService;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.SortType;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.SortType;
 
 import java.util.List;
 

@@ -11,8 +11,8 @@ import org.sakaiproject.gradebookng.business.model.GbGradeInfo;
 import org.sakaiproject.gradebookng.business.model.GbStudentGradeInfo;
 import org.sakaiproject.gradebookng.business.util.MessageHelper;
 import org.sakaiproject.gradebookng.tool.model.GbChartData;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.GradingType;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.api.grades.GradingType;
 
 /**
  * Panel that renders the individual assignment grade charts

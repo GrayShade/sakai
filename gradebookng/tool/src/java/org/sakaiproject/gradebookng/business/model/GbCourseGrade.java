@@ -18,7 +18,7 @@ package org.sakaiproject.gradebookng.business.model;
 import java.io.Serializable;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
 
 import lombok.Getter;
 import lombok.Setter;

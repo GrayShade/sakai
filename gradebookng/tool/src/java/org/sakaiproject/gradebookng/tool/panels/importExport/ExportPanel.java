@@ -47,8 +47,8 @@ import org.sakaiproject.gradebookng.business.util.EventHelper;
 import org.sakaiproject.gradebookng.business.util.FormatHelper;
 import org.sakaiproject.gradebookng.tool.model.GradebookUiSettings;
 import org.sakaiproject.gradebookng.tool.panels.BasePanel;
-import org.sakaiproject.service.gradebook.shared.Assignment;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
+import org.sakaiproject.core.api.grades.Assignment;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
 import org.sakaiproject.util.FormattedText;
 import org.sakaiproject.util.Validator;
 

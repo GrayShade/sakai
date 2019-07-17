@@ -7,9 +7,9 @@ import java.util.Set;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.sakaiproject.gradebookng.business.util.MessageHelper;
 import org.sakaiproject.gradebookng.tool.model.GbChartData;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
-import org.sakaiproject.service.gradebook.shared.GradeMappingDefinition;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
+import org.sakaiproject.core.api.grades.GradeMappingDefinition;
+import org.sakaiproject.core.api.grades.GradebookInformation;
 
 /**
  * Panel that renders the course grade chart for a site.

@@ -35,7 +35,7 @@ import org.sakaiproject.gradebookng.tool.model.UiMode;
 import org.sakaiproject.gradebookng.tool.pages.ImportExportPage;
 import org.sakaiproject.gradebookng.tool.panels.AddOrEditGradeItemPanelContent;
 import org.sakaiproject.gradebookng.tool.panels.BasePanel;
-import org.sakaiproject.service.gradebook.shared.Assignment;
+import org.sakaiproject.core.api.grades.Assignment;
 import org.sakaiproject.util.FormattedText;
 
 import lombok.extern.slf4j.Slf4j;

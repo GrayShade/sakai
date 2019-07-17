@@ -33,7 +33,7 @@ import org.sakaiproject.gradebookng.business.importExport.CommentValidator;
 import org.sakaiproject.gradebookng.business.model.GbUser;
 import org.sakaiproject.gradebookng.tool.component.GbAjaxButton;
 import org.sakaiproject.gradebookng.tool.component.GbFeedbackPanel;
-import org.sakaiproject.service.gradebook.shared.Assignment;
+import org.sakaiproject.core.api.grades.Assignment;
 
 import lombok.Getter;
 import lombok.Setter;

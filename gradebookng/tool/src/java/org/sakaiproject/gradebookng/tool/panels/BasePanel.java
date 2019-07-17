@@ -32,8 +32,8 @@ import org.sakaiproject.gradebookng.business.util.MessageHelper;
 import org.sakaiproject.gradebookng.tool.pages.AccessDeniedPage;
 import org.sakaiproject.rubrics.logic.RubricsConstants;
 import org.sakaiproject.rubrics.logic.RubricsService;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
-import org.sakaiproject.tool.gradebook.Gradebook;
+import org.sakaiproject.core.api.grades.GradebookInformation;
+import org.sakaiproject.core.persistence.grades.model.Gradebook;
 
 /**
  * Panel extension to abstract away some common functionality that many GBNG panels share. Classes extending {@link BasePanel} do not need

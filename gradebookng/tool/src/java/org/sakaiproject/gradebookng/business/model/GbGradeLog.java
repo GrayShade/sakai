@@ -19,7 +19,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.sakaiproject.tool.gradebook.GradingEvent;
+import org.sakaiproject.core.persistence.grades.model.GradingEvent;
 
 import lombok.Getter;
 

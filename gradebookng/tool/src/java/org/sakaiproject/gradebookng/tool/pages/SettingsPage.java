@@ -36,10 +36,10 @@ import org.sakaiproject.gradebookng.tool.panels.SettingsGradeEntryPanel;
 import org.sakaiproject.gradebookng.tool.panels.SettingsGradeReleasePanel;
 import org.sakaiproject.gradebookng.tool.panels.SettingsGradingSchemaPanel;
 import org.sakaiproject.gradebookng.tool.panels.SettingsStatisticsPanel;
-import org.sakaiproject.service.gradebook.shared.CategoryDefinition;
-import org.sakaiproject.service.gradebook.shared.ConflictingCategoryNameException;
-import org.sakaiproject.service.gradebook.shared.GradebookInformation;
-import org.sakaiproject.service.gradebook.shared.exception.UnmappableCourseGradeOverrideException;
+import org.sakaiproject.core.api.grades.CategoryDefinition;
+import org.sakaiproject.core.api.grades.ConflictingCategoryNameException;
+import org.sakaiproject.core.api.grades.GradebookInformation;
+import org.sakaiproject.core.api.grades.UnmappableCourseGradeOverrideException;
 
 /**
  * Settings page

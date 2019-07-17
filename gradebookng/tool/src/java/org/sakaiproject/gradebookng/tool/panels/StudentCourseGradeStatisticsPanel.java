@@ -22,7 +22,7 @@ import org.apache.wicket.model.Model;
 import org.apache.wicket.model.ResourceModel;
 import org.sakaiproject.gradebookng.tool.chart.CourseGradeChart;
 import org.sakaiproject.gradebookng.tool.component.GbAjaxLink;
-import org.sakaiproject.service.gradebook.shared.CourseGrade;
+import org.sakaiproject.core.persistence.grades.model.CourseGrade;
 
 /**
  * Renders the course grade graph in a modal window
