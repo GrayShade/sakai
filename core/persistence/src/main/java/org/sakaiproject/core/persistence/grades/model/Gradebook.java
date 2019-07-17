@@ -42,7 +42,7 @@ import javax.persistence.Table;
  * determined will likely depend on the particular Sakai installation.
  */
 @Entity
-@Table(name = "GB_GRADEBOOK_T")
+@Table(name = "GB_GRADEBOOK_TT")
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString(onlyExplicitlyIncluded = true)

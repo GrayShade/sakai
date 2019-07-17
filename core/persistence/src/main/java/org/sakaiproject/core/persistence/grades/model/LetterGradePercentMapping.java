@@ -40,7 +40,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "GB_LETTERGRADE_PERCENT_MAPPING", uniqueConstraints = {
+@Table(name = "GB_LETTERGRADE_PERCENT_MAPPING_T", uniqueConstraints = {
     @UniqueConstraint(columnNames = {"GRADEBOOK_ID", "MAPPING_TYPE"})
 })
 @Getter @Setter

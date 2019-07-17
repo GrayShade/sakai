@@ -53,7 +53,7 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name = "GB_GRADE_MAP_T")
+@Table(name = "GB_GRADE_MAP_TT")
 @Setter
 public class GradeMapping implements Serializable, Comparable<Object> {
 

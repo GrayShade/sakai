@@ -38,7 +38,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "GB_CATEGORY_T")
+@Table(name = "GB_CATEGORY_TT")
 @Getter @Setter
 public class Category implements Serializable {
 

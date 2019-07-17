@@ -38,7 +38,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "GB_COMMENT_T", uniqueConstraints = @UniqueConstraint(name = "G_O_STUDENT", columnNames = {"STUDENT_ID", "GRADABLE_OBJECT_ID"}))
+@Table(name = "GB_COMMENT_TT", uniqueConstraints = @UniqueConstraint(name = "G_O_STUDENT", columnNames = {"STUDENT_ID", "GRADABLE_OBJECT_ID"}))
 @Getter @Setter
 public class Comment implements Serializable {
 

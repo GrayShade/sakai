@@ -38,7 +38,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "GB_SPREADSHEET_T")
+@Table(name = "GB_SPREADSHEET_TT")
 @Getter @Setter
 public class Spreadsheet implements Serializable {
    

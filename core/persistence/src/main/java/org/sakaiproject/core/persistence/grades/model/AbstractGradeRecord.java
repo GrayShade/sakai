@@ -47,7 +47,7 @@ import lombok.Setter;
  *
  * @author <a href="mailto:jholtzman@berkeley.edu">Josh Holtzman</a>
  */
-@Table(name = "GB_GRADE_RECORD_T", indexes = {@Index(name = "GB_GRADE_RECORD_O_T_IDX", columnList = "OBJECT_TYPE_ID")})
+@Table(name = "GB_GRADE_RECORD_TT", indexes = {@Index(name = "GB_GRADE_RECORD_O_TT_IDX", columnList = "OBJECT_TYPE_ID")})
 @DiscriminatorColumn(name = "OBJECT_TYPE_ID", discriminatorType = DiscriminatorType.INTEGER)
 @DiscriminatorValue("0")
 @MappedSuperclass

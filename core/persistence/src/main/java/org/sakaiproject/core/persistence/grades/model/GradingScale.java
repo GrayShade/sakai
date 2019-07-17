@@ -45,7 +45,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "GB_GRADING_SCALE_T")
+@Table(name = "GB_GRADING_SCALE_TT")
 @Getter @Setter
 public class GradingScale implements Serializable, Comparable<Object> {
     

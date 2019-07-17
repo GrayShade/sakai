@@ -45,7 +45,7 @@ import lombok.Setter;
  */
 @DiscriminatorColumn(name = "OBJECT_TYPE_ID")
 @DiscriminatorValue("0")
-@Table(name = "GB_GRADABLE_OBJECT_T")
+@Table(name = "GB_GRADABLE_OBJECT_TT")
 @Entity
 @Getter @Setter
 public abstract class GradableObject implements Serializable {

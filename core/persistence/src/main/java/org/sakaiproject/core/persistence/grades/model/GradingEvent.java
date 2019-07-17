@@ -41,7 +41,7 @@ import lombok.Setter;
  * @author <a href="mailto:jholtzman@berkeley.edu">Josh Holtzman</a>
  */
 @Entity
-@Table(name = "GB_GRADING_EVENT_T")
+@Table(name = "GB_GRADING_EVENT_TT")
 @Getter @Setter
 public class GradingEvent implements Comparable<Object>, Serializable {
     

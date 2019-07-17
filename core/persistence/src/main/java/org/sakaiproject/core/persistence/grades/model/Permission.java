@@ -29,7 +29,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "GB_PERMISSION_T")
+@Table(name = "GB_PERMISSION_TT")
 @Getter @Setter
 public class Permission implements Serializable {
 

@@ -32,7 +32,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "GB_PROPERTY_T")
+@Table(name = "GB_PROPERTY_TT")
 @Getter @Setter
 public class GradebookProperty implements Serializable, Comparable<Object> {
 	
