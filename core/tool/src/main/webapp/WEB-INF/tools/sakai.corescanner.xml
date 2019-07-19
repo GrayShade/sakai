@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<registration>
+	<tool id="sakai.corescanner" 
+		title="Sakai Core Annotation Scanner" 
+		description="Tool merely for triggering a Spring scan of the annotated core services.">
+    </tool>
+</registration>
